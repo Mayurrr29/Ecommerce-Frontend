@@ -10,7 +10,7 @@ export const addToCart = createAsyncThunk(
   "cart/addToCart",
   async ({ userId, productId, quantity }) => {
     const response = await axios.post(
-      "http://ecommerce-phi-lake-19.vercel.app/api/shop/cart/add",
+      "http://ecommerce-backend-xi-black.vercel.app/api/shop/cart/add",
       {
         userId,
         productId,
@@ -26,7 +26,7 @@ export const fetchCartItems = createAsyncThunk(
   "cart/fetchCartItems",
   async (userId) => {
     const response = await axios.get(
-      `http://ecommerce-phi-lake-19.vercel.app/api/shop/cart/get/${userId}`
+      `http://ecommerce-backend-xi-black.vercel.app/api/shop/cart/get/${userId}`
     );
 
     return response.data;
@@ -37,7 +37,7 @@ export const deleteCartItem = createAsyncThunk(
   "cart/deleteCartItem",
   async ({ userId, productId }) => {
     const response = await axios.delete(
-      `http://ecommerce-phi-lake-19.vercel.app/api/shop/cart/${userId}/${productId}`
+      `http://ecommerce-backend-xi-black.vercel.app/api/shop/cart/${userId}/${productId}`
     );
 
     return response.data;
@@ -48,7 +48,7 @@ export const updateCartQuantity = createAsyncThunk(
   "cart/updateCartQuantity",
   async ({ userId, productId, quantity }) => {
     const response = await axios.put(
-      "http://ecommerce-phi-lake-19.vercel.app/api/shop/cart/update-cart",
+      "http://ecommerce-backend-xi-black.vercel.app/api/shop/cart/update-cart",
       {
         userId,
         productId,

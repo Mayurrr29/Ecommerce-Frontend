@@ -10,7 +10,7 @@ export const addReview = createAsyncThunk(
   "/order/addReview",
   async (formdata) => {
     const response = await axios.post(
-      `http://ecommerce-phi-lake-19.vercel.app/api/shop/review/add`,
+      `http://ecommerce-backend-xi-black.vercel.app/api/shop/review/add`,
       formdata
     );
 
@@ -20,7 +20,7 @@ export const addReview = createAsyncThunk(
 
 export const getReviews = createAsyncThunk("/order/getReviews", async (id) => {
   const response = await axios.get(
-    `http://ecommerce-phi-lake-19.vercel.app/api/shop/review/${id}`
+    `http://ecommerce-backend-xi-black.vercel.app/api/shop/review/${id}`
   );
 
   return response.data;

@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://ecommerce-phi-lake-19.vercel.app/api/auth/register",
+      "http://ecommerce-backend-xi-black.vercel.app/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://ecommerce-phi-lake-19.vercel.app/api/auth/login",
+      "http://ecommerce-backend-xi-black.vercel.app/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "http://ecommerce-phi-lake-19.vercel.app/api/auth/logout",
+      "http://ecommerce-backend-xi-black.vercel.app/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "http://ecommerce-phi-lake-19.vercel.app/api/auth/check-auth",
+      "http://ecommerce-backend-xi-black.vercel.app/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {

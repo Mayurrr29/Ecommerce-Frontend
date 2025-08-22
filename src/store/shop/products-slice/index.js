@@ -18,7 +18,7 @@ export const fetchAllFilteredProducts = createAsyncThunk(
     });
 
     const result = await axios.get(
-      `http://ecommerce-phi-lake-19.vercel.app/api/shop/products/get?${query}`
+      `http://ecommerce-backend-xi-black.vercel.app/api/shop/products/get?${query}`
     );
 
     console.log(result);
@@ -31,7 +31,7 @@ export const fetchProductDetails = createAsyncThunk(
   "/products/fetchProductDetails",
   async (id) => {
     const result = await axios.get(
-      `http://ecommerce-phi-lake-19.vercel.app/api/shop/products/get/${id}`
+      `http://ecommerce-backend-xi-black.vercel.app/api/shop/products/get/${id}`
     );
 
     return result?.data;

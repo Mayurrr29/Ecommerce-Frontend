@@ -10,7 +10,7 @@ export const getSearchResults = createAsyncThunk(
   "/order/getSearchResults",
   async (keyword) => {
     const response = await axios.get(
-      `http://ecommerce-phi-lake-19.vercel.app/api/shop/search/${keyword}`
+      `http://ecommerce-backend-xi-black.vercel.app/api/shop/search/${keyword}`
     );
 
     return response.data;
